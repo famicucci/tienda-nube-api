@@ -60,14 +60,14 @@ export interface Order {
   number: number;
   cancel_reason: null;
   cancelled_at: null;
-  closed_at: string;
+  closed_at: string | null;
   read_at: null;
   status: string;
   gateway_link: null;
   has_shippable_products: boolean;
   shipping_address: Address;
   shipping_status: string;
-  paid_at: null;
+  paid_at: Date | null;
   client_details: ClientDetails;
   app_id: null;
   total_paid_by_customer_including_fees: string;
